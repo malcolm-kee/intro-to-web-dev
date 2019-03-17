@@ -10,19 +10,25 @@ import jsIcon from '../images/js.svg';
 const LandingPageHeaderContent = ({ repositoryUrl }) => (
   <header className="landing-page-header">
     <div className="logo-section">
-      <img
-        src={html5Icon}
-        className="svg-logo"
-        id="html5-icon"
-        alt="HTML5 icon"
-      />
-      <img src={cssIcon} className="svg-logo" id="css-icon" alt="CSS icon" />
-      <img
-        src={jsIcon}
-        className="svg-logo"
-        id="js-icon"
-        alt="Javascript icon"
-      />
+      <div className="svg-logo-container">
+        <img
+          src={html5Icon}
+          className="svg-logo"
+          id="html5-icon"
+          alt="HTML5 icon"
+        />
+      </div>
+      <div className="svg-logo-container">
+        <img src={cssIcon} className="svg-logo" id="css-icon" alt="CSS icon" />
+      </div>
+      <div className="svg-logo-container">
+        <img
+          src={jsIcon}
+          className="svg-logo"
+          id="js-icon"
+          alt="Javascript icon"
+        />
+      </div>
     </div>
     <div className="landing-title-container">
       <h1 className="landing-title">Introduction to Web Development</h1>

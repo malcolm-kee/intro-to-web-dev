@@ -296,10 +296,10 @@ h2 > a {
 
 @keyframes circling {
   from {
-    transform: rotate(0deg) translate(-150%) rotate(0deg);
+    transform: rotate(0deg) translate(-120%) rotate(0deg);
   }
   to {
-    transform: rotate(-360deg) translate(-150%) rotate(360deg);
+    transform: rotate(-360deg) translate(-120%) rotate(360deg);
   }
 }
 
@@ -311,13 +311,23 @@ h2 > a {
 
   .logo-section {
     .svg-logo {
+      width: 100%;
+    }
+
+    .svg-logo-container {
       width: 70px;
+      height: 70px;
+      left: 30%;
+      top: 25vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
-      left: 50%;
       animation-name: circling;
       animation-duration: 9s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
+      filter: opacity(50%);
 
       &:first-child {
         animation-delay: -6s;
@@ -328,6 +338,7 @@ h2 > a {
       }
 
       @media screen and (min-width: 700px) {
+        top: 45vh;
         width: 150px;
       }
     }
