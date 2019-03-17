@@ -3,15 +3,29 @@ import React from 'react';
 import { LinkButton } from '../components/button';
 import { MaterialIcons } from '../components/material-icons';
 import githubLogo from '../images/github-small.png';
-import reactLogo from '../images/logo.svg';
+import html5Icon from '../images/html5.svg';
+import cssIcon from '../images/css.svg';
+import jsIcon from '../images/js.svg';
 
 const LandingPageHeaderContent = ({ repositoryUrl }) => (
   <header className="landing-page-header">
     <div className="logo-section">
-      <img src={reactLogo} id="react-logo" alt="React Logo" />
+      <img
+        src={html5Icon}
+        className="svg-logo"
+        id="html5-icon"
+        alt="HTML5 icon"
+      />
+      <img src={cssIcon} className="svg-logo" id="css-icon" alt="CSS icon" />
+      <img
+        src={jsIcon}
+        className="svg-logo"
+        id="js-icon"
+        alt="Javascript icon"
+      />
     </div>
     <div className="landing-title-container">
-      <h1 className="landing-title">Introduction to React v2</h1>
+      <h1 className="landing-title">Introduction to Web Development</h1>
       <div className="button-toolbar">
         <LinkButton to="/introduction/" primary large>
           Start <MaterialIcons name="arrow_forward" />

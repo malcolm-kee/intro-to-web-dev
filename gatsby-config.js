@@ -72,13 +72,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Intro to ReactJS v2',
-        short_name: 'React Intro v2',
+        name: 'Intro to Web Development',
+        short_name: 'Web Dev Intro',
         start_url: '/',
         background_color: '#fdf6e3',
         theme_color: '#61dafb',
         display: 'standalone',
-        icon: 'src/images/react-logo.png',
+        icon: 'src/images/html5.png',
         legacy: true
       }
     },

@@ -294,10 +294,44 @@ h2 > a {
   margin-right: 4px;
 }
 
+@keyframes circling {
+  from {
+    transform: rotate(0deg) translate(-150%) rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg) translate(-150%) rotate(360deg);
+  }
+}
+
 .landing-page-header {
   display: flex;
+  position: relative;
   height: 100vh;
   background: #282c34;
+
+  .logo-section {
+    .svg-logo {
+      width: 70px;
+      position: absolute;
+      left: 50%;
+      animation-name: circling;
+      animation-duration: 9s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+
+      &:first-child {
+        animation-delay: -6s;
+      }
+
+      &:last-child {
+        animation-delay: -3s;
+      }
+
+      @media screen and (min-width: 700px) {
+        width: 150px;
+      }
+    }
+  }
 }
 
 .landing-page-content {
@@ -321,17 +355,17 @@ h2 > a {
   right: 0px;
 }
 
-.logo-section,
 .landing-title-container {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+  text-align: center;
 
-.landing-title-container .button-toolbar {
-  align-self: flex-start;
+  .button-toolbar {
+    position: relative;
+  }
 }
 
 @keyframes moving-background {
@@ -360,22 +394,6 @@ h2 > a {
   animation: moving-background 2s linear 0s infinite normal none running;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-#react-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80vmax;
-  display: inline-block;
-  margin-bottom: 0;
-}
-
 .github-logo-container {
   line-height: 0;
 }
@@ -394,12 +412,7 @@ h2 > a {
 }
 
 @media screen and (max-width: 700px) {
-  .landing-title-container {
-    flex: 2;
-  }
-
   .landing-page-header {
-    flex-flow: column-reverse;
     height: 60vh;
   }
 
@@ -410,10 +423,6 @@ h2 > a {
     text-align: center;
   }
 
-  #react-logo {
-    height: 100px;
-  }
-
   .button--large {
     min-width: auto;
     min-height: 36px;
@@ -422,10 +431,6 @@ h2 > a {
 
   .button-toolbar .button {
     flex: 1;
-  }
-
-  .landing-title-container .button-toolbar {
-    align-self: auto;
   }
 
   .button-toolbar {
