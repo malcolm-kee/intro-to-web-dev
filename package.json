@@ -1,0 +1,67 @@
+{
+  "name": "intro-to-web-dev",
+  "version": "1.0.0",
+  "description": "An introduction to Web Development - HTML/CSS/JS.",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/malcolm-kee/intro-to-web-dev"
+  },
+  "keywords": [
+    "web development",
+    "beginner",
+    "learning materials"
+  ],
+  "author": "Malcolm Kee <malcolm.keeweesiong@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malcolm-kee/intro-to-web-dev/issues"
+  },
+  "homepage": "https://intro-to-react-js-v2.netlify.com/",
+  "dependencies": {
+    "gatsby": "^2.1.10",
+    "gatsby-image": "^2.0.25",
+    "gatsby-plugin-catch-links": "^2.0.9",
+    "gatsby-plugin-layout": "^1.0.12",
+    "gatsby-plugin-manifest": "^2.0.13",
+    "gatsby-plugin-netlify": "^2.0.6",
+    "gatsby-plugin-postcss": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.5",
+    "gatsby-plugin-remove-serviceworker": "^1.0.0",
+    "gatsby-plugin-sass": "^2.0.10",
+    "gatsby-plugin-sharp": "^2.0.16",
+    "gatsby-plugin-sitemap": "^2.0.4",
+    "gatsby-plugin-typography": "^2.2.4",
+    "gatsby-remark-autolink-headers": "^2.0.12",
+    "gatsby-remark-copy-linked-files": "^2.0.9",
+    "gatsby-remark-emojis": "^0.2.3",
+    "gatsby-remark-external-links": "0.0.4",
+    "gatsby-remark-images": "^3.0.1",
+    "gatsby-remark-prismjs": "^3.1.4",
+    "gatsby-source-filesystem": "^2.0.20",
+    "gatsby-transformer-remark": "^2.1.17",
+    "gatsby-transformer-sharp": "^2.1.9",
+    "join-string": "^1.0.2",
+    "node-sass": "^4.11.0",
+    "postcss-browser-reporter": "^0.5.0",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.5.0",
+    "postcss-reporter": "^6.0.1",
+    "prismjs": "^1.15.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-helmet": "^5.2.0",
+    "react-transition-group": "^2.5.3",
+    "react-typography": "^0.16.18",
+    "typography": "^0.16.18"
+  },
+  "browserslist": [
+    ">1%",
+    "last 4 versions",
+    "not ie < 9"
+  ]
+}
