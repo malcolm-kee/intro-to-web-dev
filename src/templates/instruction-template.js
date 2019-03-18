@@ -3,7 +3,8 @@ import { joinClassName } from 'join-string';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { LinkButton } from '../components/button';
-import { MaterialIcons } from '../components/material-icons';
+import prevIcon from '../images/arrow-left.svg';
+import nextIcon from '../images/arrow-right.svg';
 
 const InstructionNav = ({ pageContext, top }) => (
   <nav
@@ -18,7 +19,7 @@ const InstructionNav = ({ pageContext, top }) => (
         aria-label="previous section"
         title="previous section"
       >
-        <MaterialIcons name="arrow_back" />
+        <img src={prevIcon} height={32} alt="" />
       </LinkButton>
     ) : (
       <span />
@@ -29,7 +30,7 @@ const InstructionNav = ({ pageContext, top }) => (
         aria-label="next section"
         title="next section"
       >
-        <MaterialIcons name="arrow_forward" />
+        <img src={nextIcon} height={32} alt="" />
       </LinkButton>
     ) : (
       <span />

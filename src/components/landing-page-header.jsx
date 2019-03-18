@@ -1,10 +1,10 @@
 import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
 import { LinkButton } from '../components/button';
-import { MaterialIcons } from '../components/material-icons';
-import githubLogo from '../images/github-small.png';
-import html5Icon from '../images/html5.svg';
+import arrowRightIcon from '../images/arrow-right.svg';
 import cssIcon from '../images/css.svg';
+import githubLogo from '../images/github.svg';
+import html5Icon from '../images/html5.svg';
 import jsIcon from '../images/js.svg';
 
 const LandingPageHeaderContent = ({ repositoryUrl }) => (
@@ -34,7 +34,7 @@ const LandingPageHeaderContent = ({ repositoryUrl }) => (
       <h1 className="landing-title">Introduction to Web Development</h1>
       <div className="button-toolbar">
         <LinkButton to="/introduction/" primary large>
-          Start <MaterialIcons name="arrow_forward" />
+          Start <img src={arrowRightIcon} height={32} alt="" />
         </LinkButton>
         <a
           href={repositoryUrl}
@@ -45,7 +45,13 @@ const LandingPageHeaderContent = ({ repositoryUrl }) => (
           rel="noopener noreferrer"
           style={{ color: 'black' }}
         >
-          <img className="github-logo" src={githubLogo} alt="GitHub Logo" />
+          <img
+            className="github-logo"
+            src={githubLogo}
+            alt="GitHub Logo"
+            width={32}
+            height={32}
+          />
           <span className="hide-small">Source</span>
         </a>
       </div>

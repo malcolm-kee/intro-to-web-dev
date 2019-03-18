@@ -18,12 +18,6 @@ const typography = new Typograph({
     'Georgia',
     'serif'
   ],
-  googleFonts: [
-    {
-      name: 'Material Icons',
-      styles: ['400']
-    }
-  ],
   overrideStyles: ({ rhythm }) => ({
     a: {
       color: 'var(--textLink)'

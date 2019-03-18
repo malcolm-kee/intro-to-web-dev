@@ -164,4 +164,14 @@ green     #859900
     padding-left: 0.75em;
     border-left: 0.25em solid $primary-color;
   }
+
+  .gatsby-highlight {
+    margin-bottom: 1.75rem;
+    margin-left: -1.3125rem;
+    margin-right: -1.3125rem;
+    border-radius: 10px;
+    background: #fdf6e3;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+  }
 }
