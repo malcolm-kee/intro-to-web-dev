@@ -90,10 +90,10 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Intro to Web Development',
-        short_name: 'Web Dev Intro',
+        short_name: 'WebDev Intro',
         start_url: '/',
-        background_color: '#fdf6e3',
-        theme_color: '#61dafb',
+        background_color: '#fff',
+        theme_color: '#e44d26',
         display: 'standalone',
         icon: 'src/images/html5.png',
         legacy: true

@@ -57,15 +57,12 @@ exports.onRenderBody = (
       <script
         key="gatsby-remark-klipse-js"
         src="https://unpkg.com/klipse@7.7.3/dist/klipse_plugin.js"
+      />,
+      <link
+        key="gatsby-remark-klipse-codemirror"
+        rel="stylesheet"
+        href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"
       />
     ]);
-
-  setHeadComponents([
-    <link
-      key="gatsby-remark-klipse-codemirror"
-      rel="stylesheet"
-      href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"
-    />
-  ]);
   setPostBodyComponents(scriptsToLoad);
 };
