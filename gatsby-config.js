@@ -67,6 +67,23 @@ module.exports = {
         pathToConfigModule: 'src/config/typography'
       }
     },
+    {
+      resolve: 'gatsby-plugin-klipse-mk',
+      options: {
+        klipseSettings: {
+          selector_eval_js: '.language-javascript',
+          selector_eval_html: '.language-html',
+          codemirror_options_in: {
+            lineWrapping: true,
+            lineNumbers: true
+          },
+          codemirror_options_out: {
+            lineWrapping: true,
+            lineNumbers: true
+          }
+        }
+      }
+    },
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sitemap',
     {
