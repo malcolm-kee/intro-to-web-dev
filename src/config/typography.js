@@ -1,6 +1,7 @@
 import Typograph from 'typography';
 
 const typography = new Typograph({
+  baseLineHeight: 1.75,
   headerFontFamily: [
     '-apple-system',
     'BlinkMacSystemFont',
@@ -14,6 +15,7 @@ const typography = new Typograph({
   bodyFontFamily: [
     '-apple-system',
     'BlinkMacSystemFont',
+    'Roboto',
     'Segoe UI',
     'Georgia',
     'serif'
