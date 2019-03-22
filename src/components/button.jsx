@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 import { joinClassName } from 'join-string';
+import './button.scss';
 
 export const LinkButton = ({
   to,

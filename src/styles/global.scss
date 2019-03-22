@@ -98,59 +98,6 @@ h2 > a {
   fill: var(--textLinkHover);
 }
 
-.button {
-  background-color: transparent;
-  color: inherit;
-  color: var(--btnColor);
-  padding: $spacing-unit;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  border-radius: $spacing-unit / 2;
-  line-height: 0;
-  user-select: none;
-  transition: background-color 300ms ease-in-out;
-}
-
-.button:hover {
-  background-color: #d5d5d5;
-  background-color: var(--btnHover);
-}
-
-.button--white {
-  background-color: #fff;
-  color: #000;
-}
-
-.button--white:hover {
-  background-color: #ddd;
-}
-
-.button--large {
-  min-height: 56px;
-  min-width: 180px;
-  font-size: 1.3rem;
-  padding: $spacing-unit $spacing-unit * 2;
-}
-
-.button--primary {
-  background-color: #306b7b;
-  color: #fff;
-}
-
-.button--primary:hover {
-  background-color: #1f4d5a;
-}
-
-.button img {
-  margin: 0 4px;
-}
-
-.button i {
-  margin: 0 4px;
-}
-
 .button-toolbar {
   padding: $spacing-unit * 2 0 $spacing-unit * 2 $spacing-unit / 2;
   display: flex;
@@ -169,156 +116,26 @@ h2 > a {
   margin-right: 0;
 }
 
-.icon-button {
-  width: 48px;
-  height: 48px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  border-radius: 50%;
-  user-select: none;
-  background-color: transparent;
-  transition: background-color 300ms ease-in-out;
-}
+.landing-page-content {
+  article {
+    a {
+      text-decoration: none;
+      border-bottom: 1px solid;
+      border-bottom-color: transparent;
+      transition: border-bottom-color 300ms ease-in-out;
 
-.icon-button:hover {
-  background-color: rgba(0, 0, 0, 0.12);
-}
-
-.icon-button--danger {
-  color: #b71c1c;
-}
-
-.instruction-template-nav {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 16px;
-}
-
-.instruction-template-nav--top {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.instruction-article,
-.instruction-template-nav {
-  margin-right: 220px;
-}
-
-.instruction-article a,
-.landing-page-content article a {
-  text-decoration: none;
-  border-bottom: 1px solid;
-  border-bottom-color: transparent;
-  transition: border-bottom-color 300ms ease-in-out;
-}
-
-.instruction-article a:hover,
-.landing-page-content article a:hover {
-  color: #0d47a1;
-  color: var(--textLinkHover);
-  border-bottom-color: #0d47a1;
-  border-bottom-color: var(--textLinkHover);
-}
-
-.instruction-article a.gatsby-resp-image-link:hover {
-  border-bottom-color: transparent;
-}
-
-.navbar {
-  background: #61dafb;
-  min-height: $appbar-height;
-  padding: 8px 16px;
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-  transition: top 350ms ease-in-out;
-}
-
-.navbar > a {
-  font-family: 'Roboto', 'Helvetica', 'Arial', 'sans serif';
-  text-decoration: none;
-  color: black;
-}
-
-.navbar--hide {
-  top: -64px;
-}
-
-.navbar-toolbar {
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000;
-  > * {
-    margin: 0 $spacing-unit;
+      &:hover {
+        color: #0d47a1;
+        color: var(--textLinkHover);
+        border-bottom-color: #0d47a1;
+        border-bottom-color: var(--textLinkHover);
+      }
+    }
   }
-}
-
-.github-link {
-  text-decoration: none;
-  color: inherit;
-  border-bottom: 2px solid;
-  border-bottom-color: transparent;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
-  transition-property: color, border-bottom-color;
-}
-
-.github-link:hover {
-  color: #0d47a1;
-  border-bottom-color: #0d47a1;
-}
-
-.navbar-toolbar > .icon-button {
-  margin: 0 $spacing-unit;
-}
-
-.navbar-toolbar > .icon-button:first-child {
-  margin-left: 0;
-}
-
-.navbar-toolbar > .icon-button:last-child {
-  margin-right: 0;
 }
 
 .main-container {
   padding: 64px 32px 32px;
-}
-
-.report-issue-link-container {
-  text-align: center;
-}
-
-.report-issue-link {
-  background: #b71c1c;
-  color: #fff;
-  display: inline-flex;
-  justify-content: center;
-  text-decoration: none;
-  border-radius: 4px;
-  padding: 8px 16px;
-  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-    0 3px 1px -2px rgba(0, 0, 0, 0.12);
-}
-
-.report-issue-link:hover {
-  background: #7f0000;
-}
-
-.report-issue-link i {
-  text-decoration: none;
-  margin-right: 4px;
 }
 
 @keyframes circling {
@@ -364,7 +181,7 @@ h2 > a {
         animation-delay: -3s;
       }
 
-      @media screen and (min-width: 700px) {
+      @media screen and (min-width: $mobile-width) {
         top: 45vh;
         width: 150px;
       }
@@ -404,6 +221,25 @@ h2 > a {
   .button-toolbar {
     position: relative;
   }
+
+  .button--primary {
+    &:hover,
+    &:focus {
+      background-color: #306b7b;
+      background-size: 30px 30px;
+      background-image: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.1) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(0, 0, 0, 0.1) 50%,
+        rgba(0, 0, 0, 0.1) 75%,
+        transparent 75%,
+        transparent
+      );
+      animation: moving-background 2s linear 0s infinite normal none running;
+    }
+  }
 }
 
 @keyframes moving-background {
@@ -415,31 +251,6 @@ h2 > a {
   }
 }
 
-.landing-title-container .button--primary:hover,
-.landing-title-container .button--primary:focus {
-  background-color: #306b7b;
-  background-size: 30px 30px;
-  background-image: linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0.1) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(0, 0, 0, 0.1) 50%,
-    rgba(0, 0, 0, 0.1) 75%,
-    transparent 75%,
-    transparent
-  );
-  animation: moving-background 2s linear 0s infinite normal none running;
-}
-
-.github-logo-container {
-  line-height: 0;
-}
-
-.github-logo {
-  margin: 0;
-}
-
 .landing-title {
   font-size: 6rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -449,7 +260,7 @@ h2 > a {
   transform: translateY(20px);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: $mobile-width) {
   .landing-page-header {
     height: 60vh;
   }
@@ -459,12 +270,6 @@ h2 > a {
     margin-top: 16px;
     padding: 8px;
     text-align: center;
-  }
-
-  .button--large {
-    min-width: auto;
-    min-height: 36px;
-    font-size: 1.1rem;
   }
 
   .button-toolbar .button {
@@ -491,11 +296,6 @@ h2 > a {
 
   .table-of-content-section.table-of-content-section--fixed {
     display: none;
-  }
-
-  .instruction-article,
-  .instruction-template-nav {
-    margin-right: 0;
   }
 }
 

@@ -4,6 +4,7 @@ import React from 'react';
 import moon from '../images/moon.png';
 import sun from '../images/sun.png';
 import { Toggle } from './toggle';
+import './navbar.scss';
 
 export const Navbar = ({ siteTitle, theme, hide }) => (
   <header className={joinClassName('navbar', hide && 'navbar--hide')}>

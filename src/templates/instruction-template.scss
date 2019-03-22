@@ -1,0 +1,79 @@
+@import '../styles/constants';
+
+$right-nav-offset: 150px;
+
+.instruction-template {
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-right: 0;
+
+    @media (min-width: $mobile-width) {
+      margin-right: $right-nav-offset;
+    }
+
+    &--top {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    a > svg {
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    svg {
+      line {
+        stroke: $text-dark;
+        stroke: var(--textNormal);
+      }
+    }
+  }
+
+  .instruction-article {
+    margin-right: 0;
+    @media (min-width: $mobile-width) {
+      margin-right: $right-nav-offset;
+    }
+
+    h2 {
+      border-bottom: 1px solid;
+      border-bottom-color: inherit;
+      line-height: 2;
+    }
+
+    img[src$='.svg'] {
+      display: block;
+      margin: 0 auto;
+      max-width: 150px;
+    }
+
+    a {
+      text-decoration: none;
+      border-bottom: 1px solid;
+      border-bottom-color: transparent;
+      transition: border-bottom-color 300ms ease-in-out;
+
+      &:hover {
+        color: #0d47a1;
+        color: var(--textLinkHover);
+        border-bottom-color: #0d47a1;
+        border-bottom-color: var(--textLinkHover);
+      }
+
+      &.gatsby-resp-image-link:hover {
+        border-bottom-color: transparent;
+      }
+    }
+  }
+}

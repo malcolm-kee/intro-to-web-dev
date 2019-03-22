@@ -1,0 +1,64 @@
+@import '../styles/constants';
+
+.button {
+  background-color: transparent;
+  color: inherit;
+  color: var(--btnColor);
+  padding: $spacing-unit;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: $spacing-unit / 2;
+  line-height: 0;
+  user-select: none;
+  transition: background-color 300ms ease-in-out;
+
+  &:hover {
+    background-color: #d5d5d5;
+    background-color: var(--btnHover);
+  }
+
+  &--white {
+    background-color: #fff;
+    color: #000;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+
+  &--large {
+    padding: $spacing-unit $spacing-unit * 2;
+    min-width: auto;
+    min-height: 36px;
+    font-size: 1.1rem;
+
+    @media (min-width: $mobile-width) {
+      min-height: 56px;
+      min-width: 180px;
+      font-size: 1.3rem;
+    }
+  }
+
+  &--primary {
+    background-color: #306b7b;
+    color: #fff;
+
+    &:hover {
+      background-color: #1f4d5a;
+    }
+
+    svg {
+      line {
+        stroke: #fff;
+      }
+    }
+  }
+
+  img,
+  svg,
+  i {
+    margin: 0 4px;
+  }
+}

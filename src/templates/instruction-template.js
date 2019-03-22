@@ -3,8 +3,9 @@ import { joinClassName } from 'join-string';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { LinkButton } from '../components/button';
-import prevIcon from '../images/arrow-left.svg';
-import nextIcon from '../images/arrow-right.svg';
+import PrevIcon from '../images/arrow-left.icon.svg';
+import NextIcon from '../images/arrow-right.icon.svg';
+import './instruction-template.scss';
 
 const InstructionNav = ({ pageContext, top }) => (
   <nav
@@ -19,7 +20,7 @@ const InstructionNav = ({ pageContext, top }) => (
         aria-label="previous section"
         title="previous section"
       >
-        <img src={prevIcon} height={32} alt="" />
+        <PrevIcon width={32} height={32} />
       </LinkButton>
     ) : (
       <span />
@@ -30,7 +31,7 @@ const InstructionNav = ({ pageContext, top }) => (
         aria-label="next section"
         title="next section"
       >
-        <img src={nextIcon} height={32} alt="" />
+        <NextIcon width={32} height={32} />
       </LinkButton>
     ) : (
       <span />

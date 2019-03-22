@@ -15,6 +15,14 @@ module.exports = {
     'gatsby-plugin-postcss',
     'gatsby-plugin-layout',
     {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.icon\.svg$/
+        }
+      }
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: path.resolve(__dirname, 'instructions'),

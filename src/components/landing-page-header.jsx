@@ -1,7 +1,7 @@
 import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
 import { LinkButton } from '../components/button';
-import arrowRightIcon from '../images/arrow-right.svg';
+import ArrowRightIcon from '../images/arrow-right.icon.svg';
 import cssIcon from '../images/css.svg';
 import githubLogo from '../images/github.svg';
 import html5Icon from '../images/html5.svg';
@@ -34,7 +34,7 @@ const LandingPageHeaderContent = ({ repositoryUrl }) => (
       <h1 className="landing-title">Introduction to Web Development</h1>
       <div className="button-toolbar">
         <LinkButton to="/introduction/" primary large>
-          Start <img src={arrowRightIcon} height={32} alt="" />
+          Start <ArrowRightIcon width={32} height={32} />
         </LinkButton>
         <a
           href={repositoryUrl}
