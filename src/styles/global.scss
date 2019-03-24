@@ -34,6 +34,15 @@ body {
   background-color: var(--bg);
   transition: background-color 300ms ease-in-out;
   --theme-switcher-display: block;
+
+  &.dark {
+    table,
+    tr,
+    th,
+    td {
+      border-color: #666666;
+    }
+  }
 }
 
 .theme-switcher {
@@ -68,6 +77,10 @@ h2 > a {
 
 .CodeMirror {
   margin-bottom: $spacing-unit;
+
+  &-code {
+    font-size: 12px;
+  }
 }
 
 .klipse-result {
@@ -90,6 +103,19 @@ h2 > a {
     body.dark & {
       background-color: #011627;
     }
+  }
+
+  p {
+    margin-bottom: $spacing-unit / 2;
+  }
+
+  h3 {
+    margin-top: $spacing-unit * 2;
+    margin-bottom: $spacing-unit * 2;
+  }
+
+  [id]:before {
+    display: none;
   }
 }
 
@@ -308,3 +334,34 @@ h2 > a {
     font-size: 2rem;
   }
 }
+
+/*
+** Demo in lessons - Start
+*/
+
+.inline-box {
+  display: inline-block;
+  width: 30px;
+  height: 15px;
+  border-radius: 3px;
+  margin: 0 3px;
+  background-color: cyan;
+  border: 1px solid teal;
+}
+
+.box-model-demo {
+  &-container {
+    background-color: #bbb;
+    border: 1px solid transparent;
+  }
+
+  > span {
+    display: inline-block;
+    border: 2px green dotted;
+    width: 100%;
+  }
+}
+
+/*
+** Demo in lessons - End
+*/

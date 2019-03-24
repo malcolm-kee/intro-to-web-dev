@@ -76,7 +76,7 @@ One of the things all programmer like to always argue is which text editor is th
 
 VS Code is my personal favourite. It's fast, have a lot of good default built-in, and very extensible.
 
-Other popular alternatives are [Sublime Text 3][sublime-text], [Notepad++][notepad-plus-plus]. By the way, Microsoft Word is not allowed.
+Other popular alternatives are [Sublime Text 3][sublime-text], [Notepad++][notepad-plus-plus]. Microsoft Word is not allowed.
 
 ### Code on This Website
 

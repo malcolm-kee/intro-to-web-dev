@@ -54,15 +54,7 @@ module.exports = {
               maxWidth: 700
             }
           },
-          'gatsby-remark-prismjs',
-          {
-            resolve: 'gatsby-remark-emojis',
-            options: {
-              active: true,
-              size: 32,
-              class: 'emoji-icon'
-            }
-          }
+          'gatsby-remark-prismjs'
         ]
       }
     },

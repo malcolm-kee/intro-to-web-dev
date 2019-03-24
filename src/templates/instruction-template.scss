@@ -1,6 +1,6 @@
 @import '../styles/constants';
 
-$right-nav-offset: 150px;
+$right-nav-offset: 215px;
 
 .instruction-template {
   &-nav {
@@ -73,6 +73,35 @@ $right-nav-offset: 150px;
 
       &.gatsby-resp-image-link:hover {
         border-bottom-color: transparent;
+      }
+    }
+
+    .pre-responsive-table + table {
+      @media (max-width: 450px) {
+        thead {
+          display: none;
+        }
+        tr {
+          display: flex;
+          flex-flow: column;
+          margin-bottom: $spacing-unit;
+
+          > td:first-child {
+            border-bottom: none;
+          }
+
+          &:first-child {
+            > td:first-child {
+              border-top-color: hsla(0, 0%, 0%, 0.12);
+              border-top-style: solid;
+              border-top-width: 1px;
+
+              body.dark & {
+                border-top-color: #666666;
+              }
+            }
+          }
+        }
       }
     }
   }
