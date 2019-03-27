@@ -12,20 +12,20 @@ If you feel there is too much information to absorb and your brain is not workin
 
 Give yourself some time, keep learning. You will feel more confident as time goes.
 
-## Final takeaways:
+## Final takeaways
 
 1. Google, Google, Google. That's part of the job.
 1. If you're stuck, take a rest and walk around, or continue tomorrow. Programming is a cycle of feeling like an idiot and feeling like the smartest guy in the world. Don't let either feeling go over your head.
 
-![Two states of being programmer](two-states-of-programmer.jpg)
+   ![Two states of being programmer](two-states-of-programmer.jpg)
 
 1. If something interest you then you can keep learning about it. Go deep into it. That's the fun of programming.
 
-![Distracted boyfriend holding girlfriend that represents HTML, CSS, JS looking at hot girl representing Python](distracted-bf.jpg)
+   ![Distracted boyfriend holding girlfriend that represents HTML, CSS, JS looking at hot girl representing Python](distracted-bf.jpg)
 
 1. Don't compare yourself to others. Programming is a field that keep changing, it means the knowledge totally change every few years, and nobody can keep themselves updated of all the changes. It means there are a lot opportunities for everyone.
 
-## Next steps:
+## Next steps
 
 1. Finish the projects. You can ask me questions in the meetup or just message me. I won't give you answer but probably will share you the page for you to read.
 1. [freeCodeCamp] - thousands of coding lessons and totally free

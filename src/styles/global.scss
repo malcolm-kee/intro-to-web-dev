@@ -199,17 +199,17 @@ h2 > a {
       align-items: center;
       position: absolute;
       animation-name: circling;
-      animation-duration: 9s;
+      animation-duration: 12s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
       filter: opacity(50%);
 
       &:first-child {
-        animation-delay: -6s;
+        animation-delay: -8s;
       }
 
       &:last-child {
-        animation-delay: -3s;
+        animation-delay: -4s;
       }
 
       @media screen and (min-width: $mobile-width) {

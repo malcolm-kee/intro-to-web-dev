@@ -16,14 +16,14 @@ We're going to make a news site together, and the project would looks like this:
 
 The goal is not to create a exact copy, but to use what you've learnt to achieve something almost similar.
 
-- The image uses a special URL: [`http://placecorgi.com/500/250`][placecorgi], which allows us to generate random picture of cute Corgi.
+- The image uses a special URL: [http://placecorgi.com/500/250][placecorgi], which allows us to generate random picture of cute Corgi.
 
 [Here is a complete version][project-complete-version]
 
 ## Project Setup
 
 1.  To create your project, create an empty folder and name it anything you like, e.g. `my-first-project`.
-1.  Create a file that ends with `.html`, e.g. `news.html`.
+1.  Create a file that ends with `.html`, e.g. `news.html`. You probably need to enable show file extension for your laptop. See [here][windows-file-extensions] to learn how to do that in Windows.
 1.  Fill up the content with the basic HTML template. You can generate the same in VS Code if you type `html:5` and then press [Tab].
 
     ```html
@@ -45,7 +45,7 @@ The goal is not to create a exact copy, but to use what you've learnt to achieve
 1.  Add the following html tag within your html `<head>` tag. This is how you add a CSS file instead of putting all of them within `<style>` tag.
 
     ```html
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     ```
 
 1.  Right click your html file and choose "Open with..." and pick your browser, now the html should be shown in your browser.
@@ -66,6 +66,7 @@ One of the most useful tricks to learn and debug HTML and CSS is to check them i
 
 [placecorgi]: http://placecorgi.com/500/250
 [project-complete-version]: https://btholt.github.io/intro-to-web-dev-v2/news.html
+[windows-file-extensions]: https://www.thewindowsclub.com/show-file-extensions-in-windows
 [mdn]: https://developer.mozilla.org/en-US/
 [css-tricks]: https://css-tricks.com/
 [stack-overflow]: https://stackoverflow.com/
