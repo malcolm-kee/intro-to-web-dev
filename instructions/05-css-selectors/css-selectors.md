@@ -21,7 +21,7 @@ Remember the section on HTML class? We're going to use it now. Class allows us t
 
 For example, if we have a h1 that is our blog title and another h1 which is the website name, we can do this:
 
-```htm
+```html
 <div>
   <h1 class="brand-name">Awesome Website</h1>
 </div>
@@ -35,7 +35,7 @@ For example, if we have a h1 that is our blog title and another h1 which is the 
 
 Then we use CSS to style them differently.
 
-```html
+```htm
 <style>
   .brand-name {
     color: chocolate;
@@ -65,7 +65,7 @@ Then we use CSS to style them differently.
 
 You can combine tag selector with class selector, like below.
 
-```html
+```htm
 <style>
   p.important {
     color: red;
@@ -84,7 +84,7 @@ You can combine tag selector with class selector, like below.
 
 You can also create a selector to specify an element with multiple classes.
 
-```html
+```htm
 <style>
   .item.quote {
     font-style: italic;
@@ -109,7 +109,7 @@ There are a few other types of selectors that you can use, but I will not cover 
 
   This is a bad practice so do **NOT** use this and use class selector instead. It's out there in the wild so I just let you know.
 
-```html
+```htm
 <style>
   #danger-text {
     color: red;
@@ -124,7 +124,7 @@ There are a few other types of selectors that you can use, but I will not cover 
 
   This is the selector when specific things happen, like mouse hover, focus, etc.
 
-```html
+```htm
 <style>
   .sensitive:hover {
     color: red;

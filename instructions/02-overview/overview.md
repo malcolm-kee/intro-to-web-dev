@@ -82,13 +82,13 @@ Other popular alternatives are [Sublime Text 3][sublime-text], [Notepad++][notep
 
 Once in a while, I will show you some code example, which would looks like below:
 
-```htm
+```html
 <p>This is a paragraph.</p>
 ```
 
 In other times, I will show you some code that is **editable**, like below:
 
-```html
+```htm
 <h1>I am heading</h1>
 <p>I am paragraph. <a href="https://google.com">Me a Link</a></p>
 ```

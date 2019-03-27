@@ -26,7 +26,7 @@ The goal is not to create a exact copy, but to use what you've learnt to achieve
 1.  Create a file that ends with `.html`, e.g. `news.html`.
 1.  Fill up the content with the basic HTML template. You can generate the same in VS Code if you type `html:5` and then press [Tab].
 
-    ```htm
+    ```html
     <!DOCTYPE html>
     <html lang="en">
       <head>
@@ -44,7 +44,7 @@ The goal is not to create a exact copy, but to use what you've learnt to achieve
 1.  Create a `styles.css` file next to your html file.
 1.  Add the following html tag within your html `<head>` tag. This is how you add a CSS file instead of putting all of them within `<style>` tag.
 
-    ```htm
+    ```html
     <link rel="stylesheet" href="styles.css" />
     ```
 

@@ -8,7 +8,7 @@ description: ''
 
 CSS can be used to layout your webpage differently. Without this, you couldn't have two boxes next to each other like below:
 
-```html
+```htm
 <style>
   .demo-box {
     width: 200px;
@@ -55,7 +55,7 @@ There are other values like `grid`, `inline-grid`, and `table` etc. which I woul
 
 Something that is a `block` or `block`-like has several measurements that add up to its whole.
 
-```html
+```htm
 <style>
   .box-model-demo {
     border: 3px solid red;
@@ -101,7 +101,7 @@ We're discuss how to layout items with CSS using flex. Some people use float, gr
 
 We're going to be using the following boxes over the next few examples.
 
-```html
+```htm
 <style>
   .box-1 {
     border: 1px solid grey;
@@ -143,7 +143,7 @@ The slightly complex part of Flex is that it is not a single property, but multi
 
 Now what I'm going to show you is a few useful use cases for flex, and all of them are sharing the following CSS.
 
-```html
+```htm
 <style>
   .flex-container {
     display: flex;
@@ -160,7 +160,7 @@ Note that I didn't change anything on the box themselves. Instead, I have only a
 
 Now let's tweak a few other flex properties: `flex-direction`, `justify-content`, and `align-items`.
 
-```html
+```htm
 <style>
   .flex-direction {
     /* flex-direction: row; */
@@ -180,7 +180,7 @@ By changing `flex-direction`, we able to change how the items are being placed i
 
 Note that the default value for `flex-direction` is `row`, therefore you will not see any difference if you set it.
 
-```html
+```htm
 <style>
   .justify-content {
     /* justify-content: flex-start; */
@@ -200,7 +200,7 @@ Note that the default value for `flex-direction` is `row`, therefore you will no
 
 By changing `justify-content`, we change how the items are aligned along the `flex-direction`. The default value of `justify-content` is `flex-start`.
 
-```html
+```htm
 <style>
   .align-items {
     /* align-items: stretch; */

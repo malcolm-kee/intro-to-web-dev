@@ -37,7 +37,7 @@ Note: here we're going to use the `script` tag and put the JavaScript directly i
 
 Let's see an example:
 
-```html
+```htm
 <style>
   .red-square {
     width: 100px;
@@ -66,7 +66,7 @@ There's a lot more you can do with an element than just modifying its style. You
 
 Okay, so what if we had multiple elements we wanted to modify all at once. We have the tools to do that too!
 
-```html
+```htm
 <ul>
   <li class="js-target">Unchanged</li>
   <li class="js-target">Unchanged</li>
@@ -88,7 +88,7 @@ Okay, so what if we had multiple elements we wanted to modify all at once. We ha
 
 We've been able to modify HTML and CSS using JavaScript using `document`. Awesome! We're going to go one step further and start involving the user. Web sites are meant to be reactive to users. In order to be reactive to them, we need to wait for them to do stuff, like click a button or type in an input. The way we do that is we wait for **events** to happen. An event is created every time certain events happens like when a user clicks something or when they type something. We respond to these events by having what are called **event listeners**. We give an event listener a function to run whenever an event happens. Let's take a look at responding to a click when a user clicks a button.
 
-```html
+```htm
 <button class="event-button">Click me!</button>
 <script>
   var eventBtn = document.querySelector('.event-button');
@@ -107,7 +107,7 @@ Let's break it down.
 
 Let's do another example with an `input` tag.
 
-```html
+```htm
 <input placeholder="type into me!" class="input-to-copy" />
 <p class="p-to-copy-to">Nothing has happened yet.</p>
 <script>
@@ -128,7 +128,7 @@ Try typing into the input. You'll see whatever text you type into the input will
 
 One more example and then we'll move on.
 
-```html
+```htm
 <style>
   .color-box {
     background-color: limegreen;
@@ -154,7 +154,7 @@ Similar to above. The key difference here is that we're listening for `change` e
 
 If you have a bunch of elements that you need to listen for events on, you could attach an event listener to each but that's a bit tedious to do. Instead what is sometimes easier to do is to use what's called **event bubbling**. When event fires on an element, after that "bubbles" up to its parent, and then its parent, and its parent, etc. until it's at the root element.
 
-```html
+```htm
 <div class="button-container">
   <button>1</button>
   <button>2</button>

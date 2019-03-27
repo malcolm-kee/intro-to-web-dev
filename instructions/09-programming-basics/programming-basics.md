@@ -46,7 +46,7 @@ console.log(yearlyRent);
 
 Let's get the snippet working in our browser. Make a new folder and add an `index.html` with the following content:
 
-```htm
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>

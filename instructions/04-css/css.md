@@ -18,7 +18,7 @@ CSS stands for **C**ascading **S**tyle **S**heet. As its name implies, it's used
 
 The most apparent way to use CSS is to change the visual display of your HTML. Imagine a h1 like below:
 
-```htm
+```html
 <h1>This is an h1</h1>
 ```
 
@@ -78,7 +78,7 @@ Let's go through each of the property-value pairs:
 
 If you have a HTML that looks like this:
 
-```htm
+```html
 <div>
   <p>This is a p.</p>
 </div>
@@ -94,7 +94,7 @@ div {
 
 The `p` will be colored red too. This is because it has a parent and just like kid inherits some of their parents looks and bad habit, children in HTML inherits some of their parents CSS properties as well. This actually works if the HTML structure is very deep like:
 
-```htm
+```html
 <body>
   <div>
     <div>

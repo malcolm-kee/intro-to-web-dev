@@ -12,7 +12,7 @@ Cascade, the "C" in CSS, is the part what makes some people says CSS are confusi
 
 What happen if you have two CSS rules that is trying to do conflicting thing? Let's see an example.
 
-```html
+```htm
 <style>
   .title {
     color: green;
@@ -28,7 +28,7 @@ In this case, we have two rules for the same class. So which one is applied? Sin
 
 Now take one step more complicated.
 
-```html
+```htm
 <style>
   .heading {
     color: green;
@@ -43,7 +43,7 @@ Now take one step more complicated.
 
 So what's this going to look like? In the eyes of CSS, these two rules are equal because they both have the same **specificity** (this is a word that used a lot in CSS). They both specify one class, which makes them equal. Since `.brand` comes later, it wins. Since `border` property doesn't conflict, it will still be applied.
 
-```html
+```htm
 <style>
   .animal.subtitle {
     color: green;
@@ -57,7 +57,7 @@ So what's this going to look like? In the eyes of CSS, these two rules are equal
 
 As you may imagine, because the first rule (`.animal.subtitle`) has two classes, its specificity is higher (it's harder to match two classes than only one class), so it wins even though it comes first. Remember, order only matters if other things being equal.
 
-```html
+```htm
 <style>
   .special-title {
     color: gold;
@@ -81,7 +81,7 @@ The next two should nearly never use. I discuss them because people post it out 
 
 As discussed [previously](/css-selectors/#other-selectors), we can use select element by id with CSS.
 
-```html
+```htm
 <style>
   #special-heading {
     color: red;
@@ -103,7 +103,7 @@ You may think that because the class selector is so long, it would wins over the
 
 Any other way that you should avoid?
 
-```html
+```htm
 <style>
   #special-head {
     color: red;
