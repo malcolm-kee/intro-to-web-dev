@@ -68,7 +68,7 @@ No website is complete without images. An image tag always has a source. They wo
 Inputs allow users to give you information. Now here's a feature you don't get in Word. You can collect inputs in various formats. Some formats are better than others. For example, which format would you use to select the top 3 favourite songs?
 
 ```htm
-  <input type="text">
+  <input type="text" />
   <input type="password">
   <input type="color" />
   <input type="file" />
@@ -76,12 +76,12 @@ Inputs allow users to give you information. Now here's a feature you don't get i
   <input type="datetime-local" />
   <input type="radio">Radio</input>
   <input type="checkbox">Checkbox</input>
-  <input type="submit"/>
 ```
 
 Try out all the inputs here.
 
 ```html
+<input />
 ```
 
 ## Select
