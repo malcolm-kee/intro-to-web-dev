@@ -57,10 +57,15 @@ One of the most useful tricks to learn and debug HTML and CSS is to check them i
 
 ## Tips to Complete the Project
 
-1. Google everything. That's what any web developer do.
+1. Google everything. That's what any web developer do. There are few resources that I want to highlight:
+   - [MDN]: this is maintained by Mozilla, the creator of Firefox browser. The info there are accurate, and it's explained very clearly. You can trust the information there.
+   - [css-tricks]: a website with insightful articles on HTML and CSS
+   - [stack-overflow]: a Q&A website where programmer post questions and get answers from others. Sometimes you may see people post your exact question, and there is answer that you can directly use it your project. Try it in your project and see if that works, that's totally fine. However, spend some time to understand the code you paste into your project afterwards because sometimes the answer may be outdated or is actually bad practice.
 1. Take it one step at a time. Complete from top to bottom.
 1. The complete site code is not the "correct" answer. That's like saying there is a correct answer to write an essay.
-1. (Only for those presents in workshop) Email your work to [malcolm.keeweesiong@gmail.com](mailto:malcolm.keeweesiong@gmail.com) before coming Friday. If more than three persons complete by then, we can have a Google Hangout session for a Q&A or just discussion.
 
 [placecorgi]: http://placecorgi.com/500/250
 [project-complete-version]: https://btholt.github.io/intro-to-web-dev-v2/news.html
+[mdn]: https://developer.mozilla.org/en-US/
+[css-tricks]: https://css-tricks.com/
+[stack-overflow]: https://stackoverflow.com/

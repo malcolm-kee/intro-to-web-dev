@@ -46,10 +46,22 @@ $right-nav-offset: 215px;
       margin-right: $right-nav-offset;
     }
 
-    h2 {
+    > h2 {
       border-bottom: 1px solid;
       border-bottom-color: inherit;
       line-height: 2;
+    }
+
+    > p {
+      > img[src$='.gif'] {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+
+        @media (min-width: $mobile-width) {
+          max-width: 400px;
+        }
+      }
     }
 
     img[src$='.svg'] {

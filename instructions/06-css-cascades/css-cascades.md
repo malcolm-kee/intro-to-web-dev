@@ -71,6 +71,10 @@ As you may imagine, because the first rule (`.animal.subtitle`) has two classes,
 
 This one is less obvious. Now we need to dig slightly deeper to specificity. **A class is considered more specific than a tag**. A class selector overrides a tag selector. Therefore even though the `h4` selector comes later, it still loses to `.special-title` selector. That's why it's useful to do all CSS in classes, you doesn't need to worry these specificity and only deal with two factors: _number of classes_ and _order_.
 
+You doesn't want to face the struggle:
+
+![Guy struggling with curtain](css-frustration.gif)
+
 ## id and !important
 
 The next two should nearly never use. I discuss them because people post it out there as solution in forum and you may find them when you google.

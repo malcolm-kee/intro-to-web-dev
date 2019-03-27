@@ -101,7 +101,7 @@ In 1990 there was such a research in Standard University, and it consists of par
 
 However, before the listeners make the guess, the tappers are asked to predict how often the listeners would be able to guess the song. The tappers are confident. In average, they predict about half of the listeners would be able to guess the song correctly.
 
-Yes, the listeners are only able to guess the song correctly for less than 3% of the songs.
+Yet, the listeners are only able to guess the song correctly for less than 3% of the songs.
 
 Why the difference is so big? This is because the tappers could hear the melody in their head, but listeners could not. The tappers' knowledge of the song that they're tapping caused them to miscalculate the listeners' comprehension. The tappers are [cursed by knowledge][curse-of-knowledge].
 

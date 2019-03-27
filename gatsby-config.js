@@ -51,7 +51,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 700
+              maxWidth: 600
             }
           },
           'gatsby-remark-prismjs'
@@ -100,6 +100,18 @@ module.exports = {
       }
     },
     'gatsby-plugin-remove-serviceworker',
-    'gatsby-plugin-netlify'
+    {
+      resolve: 'gatsby-plugin-netlify',
+      options: {
+        headers: {
+          '/*': [
+            'X-Frame-Options: sameorigin',
+            'X-XSS-Protection: 1; mode=block',
+            'X-Content-Type-Options: nosniff'
+          ]
+        },
+        mergeSecurityHeaders: false
+      }
+    }
   ]
 };

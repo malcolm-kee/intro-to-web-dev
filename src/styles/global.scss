@@ -117,6 +117,11 @@ h2 > a {
   [id]:before {
     display: none;
   }
+
+  // this is to hide the "undefined" line that could confuse student
+  &.klipse-eval-javascript .CodeMirror-code > :last-child {
+    display: none;
+  }
 }
 
 .header-link-icon svg path {

@@ -13,4 +13,4 @@ There is no prerequisite to this workshop.
 
 ## Credits
 
-This material is inspired by the [Intro to Web Dev V2](https://btholt.github.io/intro-to-web-dev-v2/) workshop, presented by Brian Holt.
+This material is inspired by the [Intro to Web Dev V2](https://btholt.github.io/intro-to-web-dev-v2/) workshop, presented by Brian Holt. I've trimmed and modified some contents to fit this 1-day workshop.
