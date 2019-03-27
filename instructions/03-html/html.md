@@ -5,12 +5,16 @@ description: ''
 ---
 
 # HTML
+
+<img src="html.svg" width="180">
+
+<br/>
 HTML forms the backbone of a website. It's a language that any web browser can interpret and understand. HTML's responsibility is to put content on the website. The words you read and images you see are all encoded with HTML. But why the complication? Can't one simply upload a Word document and be done with it? The simple answer is no. Browsers require far more information about what to say and how to say it.
 
 Let's get started with basic HTML elements.
 
 ## Headers
-Headers do more than just format titles into nice bolded texts. They are used by search engines to determine the relevance of your website to users doing a web search. Using the right keywords can generate more traffic to your website. HTML gives you six levels of headers ranging from small to large.
+Headers are attention grabbing texts that are usually used at the beginning of new sections. They do more than just format titles into nice bolded texts. They are also used by search engines to determine the relevance of your website to users doing a web search. Using the right keywords can generate more traffic to your website. HTML gives you six levels of headers ranging from small to large.
 
 ```html
 <h1>This is a level 1 header</h1>
@@ -36,7 +40,7 @@ These tags link texts to other websites. To create links to your text, wrap them
 There's a bunch of a tags flying around in <a href="https://en.wikipedia.org/wiki/Pharmacology">Wikipedia</a>
 ```
 
-## Lists
+## List
 Also similar to Word, you can create lists. HTML offers two types of lists. Ordered lists &lt;ol&gt; numbers the items. Unordered lists &lt;ul&gt; bullets the items.
 
 ```html
