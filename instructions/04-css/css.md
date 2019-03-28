@@ -6,7 +6,7 @@ description: ''
 
 # CSS
 
-![CSS Logo](css.svg)
+![CSS Logo](css.png)
 
 So far you've learnt HTML to write document that is meaningful to human and machine. However, as mentioned in the beginning, that's like the raw material and structure of you home only.
 

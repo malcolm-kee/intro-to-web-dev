@@ -71,7 +71,7 @@ module.exports = {
       resolve: 'gatsby-plugin-klipse-mk',
       options: {
         klipseSettings: {
-          selector_eval_js: '.language-javascript',
+          selector_eval_js: 'pre.language-javascript, code.language-javascript',
           selector_eval_html: '.language-htm',
           codemirror_options_in: {
             lineWrapping: true,

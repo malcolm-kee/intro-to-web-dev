@@ -6,7 +6,7 @@ description: ''
 
 # Programming Basics
 
-![JS Logo](js.svg)
+![JS Logo](js.png)
 
 Programming, also known as coding, is about asking computer to do something for you.
 

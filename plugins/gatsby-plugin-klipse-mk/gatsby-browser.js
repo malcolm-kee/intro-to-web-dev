@@ -1,6 +1,6 @@
 /* global klipse */
 
-exports.onRouteUpdate = function({ location }) {
+exports.onRouteUpdate = function() {
   if (
     typeof klipse !== `undefined` &&
     window.klipse.plugin &&

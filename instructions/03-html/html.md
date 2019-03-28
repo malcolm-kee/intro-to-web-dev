@@ -6,7 +6,7 @@ description: ''
 
 # HTML
 
-<img src="html.svg" width="180">
+![HTML Logo](html.png)
 
 <br/>
 HTML forms the backbone of a website. It's a language that any web browser can interpret and understand. HTML's responsibility is to put content on the website. The words you read and images you see are all encoded with HTML. But why the complication? Can't one simply upload a Word document and be done with it? The simple answer is no. Browsers require far more information about what to say and how to say it.

@@ -70,6 +70,11 @@ $right-nav-offset: 215px;
       max-width: 150px;
     }
 
+    img.gatsby-resp-image-image {
+      // this important hack is necessary because the style was set as inline style;
+      box-shadow: var(--bg) 0px 0px 0px 400px inset !important;
+    }
+
     a {
       text-decoration: none;
       border-bottom: 1px solid;
