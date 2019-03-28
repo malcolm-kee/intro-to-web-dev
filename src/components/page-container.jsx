@@ -38,7 +38,7 @@ export const PageContainer = ({ children, isRoot, theme }) => (
         />
         <div>
           <main>{children}</main>
-          <Footer bugUrl={data.site.siteMetadata.bugUrl} />
+          {!isRoot && <Footer bugUrl={data.site.siteMetadata.bugUrl} />}
         </div>
         <TableOfContents fixed hide={isRoot} />
       </div>

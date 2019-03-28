@@ -29,6 +29,13 @@ const typography = new Typograph({
       marginBottom: rhythm(3 / 2),
       fontSize: rhythm(2)
     },
+    '@media only screen and (max-width:700px)': {
+      h1: {
+        fontSize: rhythm(1.5),
+        marginTop: rhythm(1 / 3),
+        marginBottom: rhythm(2 / 3)
+      }
+    },
     blockquote: {
       color: 'inherit',
       fontStyle: 'italic',

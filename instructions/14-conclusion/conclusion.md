@@ -28,17 +28,21 @@ Give yourself some time, keep learning. You will feel more confident as time goe
 ## Next steps
 
 1. Finish the projects. You can ask me questions in the meetup or just message me. I won't give you answer but probably will share you the page for you to read.
+1. [Javascript 30][javascript-30] - build 30 projects in 30 days. Fun stuff.
 1. [freeCodeCamp] - thousands of coding lessons and totally free
 1. [CS50] - if you want to go back and learn the computer science fundamentals. This is a free course by Harvard University.
 1. Join [#100DaysOfCode][100-days-of-code]
 1. Build something that interest you, e.g. your personal website, your own to-do app, etc. Some inspirations:
    - [Paint](https://jspaint.app)
+   - [Winamp](https://webamp.org/)
+   - [Windows XP](https://winxp.now.sh/)
    - [purecss-francine](http://diana-adrianne.com/purecss-francine/)
 
 <hr >
 <h1 align="center"> The End </h1>
 <hr >
 
+[javascript-30]: https://javascript30.com/
 [freecodecamp]: https://www.freecodecamp.org/
 [cs50]: https://www.edx.org/course/cs50s-introduction-to-computer-science
 [100-days-of-code]: https://www.100daysofcode.com/

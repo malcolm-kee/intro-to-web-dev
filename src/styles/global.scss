@@ -149,6 +149,12 @@ h2 > a {
 
 .landing-page-content {
   article {
+    @media screen {
+      h1 {
+        display: none;
+      }
+    }
+
     a {
       text-decoration: none;
       border-bottom: 1px solid;
@@ -178,48 +184,6 @@ h2 > a {
   }
 }
 
-.landing-page-header {
-  display: flex;
-  position: relative;
-  height: 100vh;
-  background: #282c34;
-
-  .logo-section {
-    .svg-logo {
-      width: 100%;
-    }
-
-    .svg-logo-container {
-      width: 70px;
-      height: 70px;
-      left: 30%;
-      top: 25vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      animation-name: circling;
-      animation-duration: 12s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      filter: opacity(50%);
-
-      &:first-child {
-        animation-delay: -8s;
-      }
-
-      &:last-child {
-        animation-delay: -4s;
-      }
-
-      @media screen and (min-width: $mobile-width) {
-        top: 45vh;
-        width: 150px;
-      }
-    }
-  }
-}
-
 .landing-page-content {
   position: relative;
   .button-toolbar {
@@ -241,38 +205,6 @@ h2 > a {
   right: 0px;
 }
 
-.landing-title-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  .button-toolbar {
-    position: relative;
-  }
-
-  .button--primary {
-    &:hover,
-    &:focus {
-      background-color: #306b7b;
-      background-size: 30px 30px;
-      background-image: linear-gradient(
-        45deg,
-        rgba(0, 0, 0, 0.1) 25%,
-        transparent 25%,
-        transparent 50%,
-        rgba(0, 0, 0, 0.1) 50%,
-        rgba(0, 0, 0, 0.1) 75%,
-        transparent 75%,
-        transparent
-      );
-      animation: moving-background 2s linear 0s infinite normal none running;
-    }
-  }
-}
-
 @keyframes moving-background {
   0% {
     background-position: 0 0;
@@ -282,27 +214,7 @@ h2 > a {
   }
 }
 
-.landing-title {
-  font-size: 6rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #61dafb;
-  text-shadow: 1px 1px 10px #000, 1px 1px 10px #bbb;
-  padding-right: 16px;
-  transform: translateY(20px);
-}
-
 @media screen and (max-width: $mobile-width) {
-  .landing-page-header {
-    height: 60vh;
-  }
-
-  .landing-title {
-    font-size: 3rem;
-    margin-top: 16px;
-    padding: 8px;
-    text-align: center;
-  }
-
   .button-toolbar .button {
     flex: 1;
   }
@@ -333,10 +245,6 @@ h2 > a {
 @media screen and (max-width: 500px) {
   .hide-small {
     display: none;
-  }
-
-  .landing-title {
-    font-size: 2rem;
   }
 }
 

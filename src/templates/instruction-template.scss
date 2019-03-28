@@ -18,17 +18,38 @@ $right-nav-offset: 215px;
       margin-bottom: 8px;
     }
 
-    a > svg {
-      position: relative;
-      display: inline-block;
+    .next-section-link {
+      border-radius: 0 70% 70% 0;
+    }
 
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+    .prev-section-link {
+      border-radius: 70% 0 0 70%;
+    }
+
+    a {
+      > svg {
+        position: relative;
+        display: inline-block;
+        transition: transform 500ms $timing-function-bouncy;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        .arrow-right {
+          transform: translateX(25%);
+        }
+        .arrow-left {
+          transform: translateX(-25%);
+        }
       }
     }
 

@@ -19,6 +19,7 @@ const InstructionNav = ({ pageContext, top }) => (
         to={pageContext.previous.frontmatter.path}
         aria-label="previous section"
         title="previous section"
+        className="prev-section-link"
       >
         <PrevIcon width={32} height={32} />
       </LinkButton>
@@ -30,6 +31,7 @@ const InstructionNav = ({ pageContext, top }) => (
         to={pageContext.next.frontmatter.path}
         aria-label="next section"
         title="next section"
+        className="next-section-link"
       >
         <NextIcon width={32} height={32} />
       </LinkButton>

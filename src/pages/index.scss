@@ -1,0 +1,54 @@
+@import '../styles/constants';
+
+$arrow-start: 80%;
+$no-clip: polygon(
+  0 0,
+  0 0,
+  $arrow-start 0,
+  100% 0,
+  100% 100%,
+  $arrow-start 100%,
+  0 100%,
+  0 100%
+);
+$arrow-clip: polygon(
+  100% - $arrow-start 50%,
+  0 0,
+  $arrow-start 0,
+  100% 50%,
+  100% 50%,
+  $arrow-start 100%,
+  0 100%,
+  100% - $arrow-start 50%
+);
+
+.landing-page {
+  @media screen and (min-width: $mobile-width) {
+    .button--primary {
+      clip-path: $no-clip;
+      transform: scale(1);
+      transition-property: clip-path, transform, background;
+      // bouncy transition
+      transition-timing-function: $timing-function-bouncy;
+
+      &:hover,
+      &:focus {
+        clip-path: $arrow-clip;
+        transform: scale(1.3);
+        background-color: #306b7b;
+        background-size: 30px 30px;
+        background-image: linear-gradient(
+          45deg,
+          rgba(0, 0, 0, 0.1) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(0, 0, 0, 0.1) 50%,
+          rgba(0, 0, 0, 0.1) 75%,
+          transparent 75%,
+          transparent
+        );
+        animation: moving-background 2s linear 0s infinite normal none running;
+      }
+    }
+  }
+}

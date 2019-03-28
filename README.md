@@ -7,9 +7,11 @@ path: '/'
 
 An introduction to Web Development (HTML, CSS, & Javascript).
 
+A full-day workshop that teach you how to create website contents with HTML, style them with CSS, and make them interactive with Javascript. Its primary target students are beginner with zero experience in programming.
+
 ## Prerequisite
 
-There is no prerequisite to this workshop.
+The only prerequisite of this workshop is how to use your computer to do basic tasks e.g. typing and browse Internet. Other than that, you're good to go!
 
 ## Credits
 

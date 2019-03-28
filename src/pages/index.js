@@ -3,7 +3,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { LandingPageHeader } from '../components/landing-page-header';
 import { TableOfContents } from '../components/table-of-contents';
-import NextIcon from '../images/arrow-right.icon.svg';
+import './index.scss';
 
 const IndexPage = ({ data }) => (
   <div className="landing-page">
@@ -23,7 +23,7 @@ const IndexPage = ({ data }) => (
           to="/introduction/"
           className="button button--large button--primary"
         >
-          Start Learning <NextIcon height={32} width={32} />
+          Start
         </Link>
       </div>
       <TableOfContents />

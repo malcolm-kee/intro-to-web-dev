@@ -1,0 +1,125 @@
+@import '../styles/constants';
+
+/**
+  Animation on this page:
+  - wait 1s
+  - typing of the word "Development" for 2s
+  - wait around 1s
+  - logo and the button appears in 1s
+**/
+
+@keyframes delay-fade {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+$delay-fade-animation: delay-fade 5s ease-in-out;
+
+.landing-page-header {
+  position: relative;
+  height: 70vh;
+  background: #282c34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 550px) {
+    height: 65vh;
+  }
+
+  @media screen and (min-width: $mobile-width) {
+    height: 100vh;
+  }
+
+  .logo-section {
+    padding-top: $spacing-unit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .svg-logo {
+      width: 100%;
+    }
+
+    .svg-logo-container {
+      display: inline-block;
+      width: 70px;
+      animation: $delay-fade-animation;
+    }
+  }
+}
+
+.landing-title-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .button-toolbar {
+    position: relative;
+    animation: $delay-fade-animation;
+  }
+}
+
+/**
+    typing animation is inspired by Lea Verou CSS Secret
+*/
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  33.333% {
+    width: 0;
+  }
+
+  100% {
+    width: 11ch;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-right-color: currentColor;
+  }
+}
+
+.landing-title {
+  font-size: 6rem;
+  font-family: Consolas, Monaco, monospace;
+  font-weight: bold;
+  color: #61dafb;
+  text-shadow: 1px 1px 10px #000, 1px 1px 10px #bbb;
+  padding: 0 16px;
+  margin: 0;
+
+  @media screen and (max-width: 500px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    font-size: 3rem;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .animated-word {
+    display: inline-block;
+    width: 11ch;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.05em solid transparent;
+    animation: typing 3s steps(11), caret 1s steps(1) infinite;
+  }
+}
