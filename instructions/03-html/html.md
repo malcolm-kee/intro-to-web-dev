@@ -84,8 +84,6 @@ Inputs allow users to give you information. Now here's a feature you don't get i
   <input type="file" />
   <input type="number" />
   <input type="datetime-local" />
-  <input type="radio">Radio</input>
-  <input type="checkbox">Checkbox</input>
 ```
 
 Try out all the inputs here.
