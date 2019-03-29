@@ -1,4 +1,4 @@
-import { graphql, StaticQuery } from 'gatsby';
+import { graphql, StaticQuery, Link } from 'gatsby';
 import React from 'react';
 import { LinkButton } from '../components/button';
 import cssIcon from '../images/css.svg';
@@ -11,30 +11,33 @@ const LandingPageHeaderContent = ({ repositoryUrl }) => (
   <header className="landing-page-header">
     <div>
       <div className="logo-section">
-        <div className="svg-logo-container">
+        <Link to="/css/" className="svg-logo-container">
           <img
             src={cssIcon}
             className="svg-logo"
             id="css-icon"
             alt="CSS icon"
           />
-        </div>
-        <div className="svg-logo-container">
+        </Link>
+        <Link to="/html/" className="svg-logo-container">
           <img
             src={html5Icon}
             className="svg-logo"
             id="html5-icon"
             alt="HTML5 icon"
           />
-        </div>
-        <div className="svg-logo-container">
+        </Link>
+        <Link
+          to="/programming-basics/"
+          className="svg-logo-container js-logo-container"
+        >
           <img
             src={jsIcon}
             className="svg-logo"
             id="js-icon"
             alt="Javascript icon"
           />
-        </div>
+        </Link>
       </div>
       <div className="landing-title-container">
         <h1 className="landing-title">
@@ -44,7 +47,6 @@ const LandingPageHeaderContent = ({ repositoryUrl }) => (
         <div className="button-toolbar">
           <LinkButton to="/introduction/" primary large>
             Start
-            {/* <ArrowRightIcon width={32} height={32} /> */}
           </LinkButton>
           <a
             href={repositoryUrl}

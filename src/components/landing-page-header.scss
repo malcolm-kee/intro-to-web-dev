@@ -41,19 +41,59 @@ $delay-fade-animation: delay-fade 5s ease-in-out;
   }
 
   .logo-section {
-    padding-top: $spacing-unit;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
     .svg-logo {
       width: 100%;
+      max-height: 100%;
+      margin: 0;
+      transition: filter 200ms ease-in-out;
+      filter: grayscale(1);
     }
 
     .svg-logo-container {
-      display: inline-block;
-      width: 70px;
+      display: inline-flex;
+      width: 80px;
+      height: 80px;
+      padding: $spacing-unit;
+      -webkit-tap-highlight-color: transparent;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border-style: solid;
+      border-width: 3px;
+      border-color: transparent;
       animation: $delay-fade-animation;
+      transition-duration: 200ms;
+      transition-property: transform, border-color;
+      transition-timing-function: $timing-function-bouncy;
+
+      &.js-logo-container {
+        padding: $spacing-unit * 2;
+      }
+
+      @media screen and (min-width: $mobile-width) {
+        width: 150px;
+        height: 150px;
+        padding: $spacing-unit * 2;
+
+        &.js-logo-container {
+          padding: $spacing-unit * 4;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        transition-delay: 0;
+        transform: scale(1.2);
+        border-color: $text-link-light;
+        outline: none;
+        .svg-logo {
+          filter: none;
+        }
+      }
     }
   }
 }
@@ -65,6 +105,7 @@ $delay-fade-animation: delay-fade 5s ease-in-out;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: $spacing-unit * 2;
 
   .button-toolbar {
     position: relative;
