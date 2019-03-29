@@ -55,6 +55,10 @@ The goal is not to create a exact copy, but to use what you've learnt to achieve
 
 One of the most useful tricks to learn and debug HTML and CSS is to check them in the browser directly. Right click on any element in the webpage and click "Inspect Element", all the HTML and CSS are shown to you and you can tweak them directly to see the effect.
 
+![Right click and click "Inspect Element" to see DevTools for your browser](browser-devtools.png)
+
+The great thing about Browser DevTools is that you can use it to inspect _all_ websites. So if you see some very nice styles/elements on any website, you can just use Browser DevTools to "steal" it.
+
 ## Tips to Complete the Project
 
 1. Google everything. That's what any web developer do. There are few resources that I want to highlight:

@@ -14,7 +14,7 @@ To have a home that you're proud to let your parents and friends to visit, you n
 
 ## Style
 
-CSS stands for **C**ascading **S**tyle **S**heet. As its name implies, it's used to style your website.
+CSS stands for **C**ascading **S**tyle **S**heet. As its name implies, it's used to style your website. (We'll talk about the Cascading part [later](/css-cascades/).)
 
 The most apparent way to use CSS is to change the visual display of your HTML. Imagine a h1 like below:
 

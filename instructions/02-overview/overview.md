@@ -52,7 +52,7 @@ We will go through what each of these in detail later, so no worries if this is 
 
 ## Tools
 
-Today we will go through this website, and it will be always on Internet even after this website ends, so don't bother to copy anything down, you can refer to it later.
+Today we will go through this website, and it will be always on Internet even after this workshop ends, so don't bother to copy anything down, you can refer to it later.
 
 However, there are two softwares that I want to discuss now, so it's easier when we do our coding exercise.
 

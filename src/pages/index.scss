@@ -28,7 +28,6 @@ $arrow-clip: polygon(
       clip-path: $no-clip;
       transform: scale(1);
       transition-property: clip-path, transform, background;
-      // bouncy transition
       transition-timing-function: $timing-function-bouncy;
 
       &:hover,
@@ -47,7 +46,7 @@ $arrow-clip: polygon(
           transparent 75%,
           transparent
         );
-        animation: moving-background 2s linear 0s infinite normal none running;
+        animation: moving-background 1s linear 0s infinite normal none running;
       }
     }
   }

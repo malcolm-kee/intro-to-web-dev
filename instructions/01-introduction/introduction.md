@@ -37,7 +37,7 @@ So my advice to you while learning programming is that, if you don't understand 
 
 ## Who Am I?
 
-My name is Malcolm. I'm a web developer at a Denmark insurance company called Topdanmark. I build website for my company, creating form to capture customer's data etc. etc. I also work in open source project and organize [a meetup group][react-meetup] that focus on a specific framework, React, which I conducted workshop like today. Previous to that, I worked in Accenture and a startup company.
+My name is Malcolm. I'm a web developer at a Denmark insurance company called Topdanmark. I build website for my company, creating form to capture customer's data etc. etc. I also work in open source project and organize [a meetup group][react-meetup] that focus on a specific framework, React, which I conducted workshop like today. Prior to that, I worked in Accenture and a startup company.
 
 My current passions are teaching and programming. And I think this combination very good, because programming requires a lot of learning, and I always think teaching is the best way to learn. So, yeah, thanks for joining me on learning this.
 
